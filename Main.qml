@@ -4,82 +4,123 @@ import QtQuick.Controls
 
 Window {
     id: window
-    width: 640
-    height: 480
+    width: 1024
+    height: 600
     visible: true
     title: qsTr("Hello World")
-
-    GridLayout {
+    RowLayout {
         anchors.fill: parent
-        anchors.margins: 5
-        columns: 2
+        spacing: 0
+        ColumnLayout {
+            Layout.alignment: Qt.AlignTop
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Menu"
+                    font.pixelSize: 30
+                }
+            }
 
-        // --- Column 1 (Index 0) ---
-        Text {
-            text: "Menu"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 0
-        }
-        Text {
-            text: "Setup"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 1
-        }
-        Text {
-            text: "Run"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 2
-        }
-        Text {
-            text: "Analysis"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 3
-        }
-        Text {
-            text: "Amplification Plot"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 4
-        }
-        Text {
-            text: "Standard Curve"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 5
-        }
-        Text {
-            text: "Row Data"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 6
-        }
-        Text {
-            text: "Summary"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 7
-        }
-        Text {
-            text: "End"
-            font.pixelSize: 30
-            Layout.column: 0
-            Layout.row: 8
-        }
 
-        // --- Column 2 (Index 1) ---
-        Text {
-            text: "Experiment"
-            font.pixelSize: 30
-            Layout.column: 1
-            Layout.row: 0
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Setup"
+                    font.pixelSize: 30
+                }
+            }
 
-            // --- Add these two lines ---
-            Layout.fillWidth: true
-            horizontalAlignment: Text.AlignLeft
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Run"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Analysis"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Amplification Plot"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Standard Curve"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Raw Data"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "Summary"
+                    font.pixelSize: 30
+                }
+            }
+
+            Rectangle {
+                Layout.alignment: Qt.AlignLeft
+                color: "red"
+                Layout.preferredWidth: 250
+                Layout.preferredHeight: 50
+                Text {
+                    text: "End"
+                    font.pixelSize: 30
+                }
+            }
+        }
+        ColumnLayout {
+            Layout.alignment: Qt.AlignTop
+            Rectangle {
+                Layout.preferredWidth: 250
+                Text {
+                    text: "Experiment"
+                    font.pixelSize: 30
+                }
+            }
         }
     }
 }
