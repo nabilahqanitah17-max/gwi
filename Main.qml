@@ -35,9 +35,8 @@ Window {
                     width: 250
                     text: "Setup"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -48,9 +47,8 @@ Window {
                     width: 250
                     text: "Run"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -61,9 +59,8 @@ Window {
                     width: 250
                     text: "Analysis"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -74,9 +71,8 @@ Window {
                     width: 250
                     text: "Amplification Plot"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
             Rectangle {
@@ -86,9 +82,8 @@ Window {
                     width: 250
                     text: "Standard Curve"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -99,9 +94,8 @@ Window {
                     width: 250
                     text: "Raw Data"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -112,9 +106,8 @@ Window {
                     width: 250
                     text: "Summary"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
 
@@ -125,9 +118,8 @@ Window {
                     width: 250
                     text: "End"
                     font.pixelSize: 30
-                    palette {
-                        button: "red"
-                    }
+                    palette.button: "red"
+                    onClicked: buttonHandler.handleButtonClick(text)
                 }
             }
         }
@@ -147,12 +139,8 @@ Window {
                 }
             }
 
-            // This spacer will take up all the available vertical space
-            Item {
-                Layout.fillHeight: true
-            }
+            Item { Layout.fillHeight: true }
 
-            // This new button will be pushed to the bottom
             Button {
                 text: "Save Plot"
                 font.pixelSize: 30
@@ -160,10 +148,10 @@ Window {
                 Layout.preferredWidth: 150
                 Layout.leftMargin: 10
                 Layout.bottomMargin: 10
-                palette {
-                    button: "lightblue"
-                }
+                palette.button: "lightblue"
+                onClicked: buttonHandler.handleButtonClick(text)
             }
         }
     }
 }
+
