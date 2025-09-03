@@ -1,18 +1,8 @@
+#include "ButtonHandler.hpp"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QObject>
-#include <QDebug>
-
-class ButtonHandler : public QObject
-{
-    Q_OBJECT
-
-public slots:
-    void handleButtonClick(const QString &buttonName) {
-        qDebug() << "C++ says: The '" << buttonName << "' button was clicked!";
-    }
-};
 
 int main(int argc, char *argv[])
 {
@@ -32,5 +22,3 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
-
-#include "main.moc"

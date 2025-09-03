@@ -149,7 +149,7 @@ Window {
                 Layout.leftMargin: 10
                 Layout.bottomMargin: 10
                 palette.button: "lightblue"
-                onClicked: buttonHandler.handleButtonClick(text)
+                onClicked: buttonHandler.savePlotClick()
             }
         }
     }

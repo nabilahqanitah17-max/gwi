@@ -9,7 +9,8 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appgwi
-    main.cpp
+    src/main.cpp
+    src/ButtonHandler.cpp
 )
 
 qt_add_qml_module(appgwi
@@ -17,6 +18,7 @@ qt_add_qml_module(appgwi
     VERSION 1.0
     QML_FILES
         Main.qml
+        SOURCES include/ButtonHandler.hpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -28,6 +30,10 @@ set_target_properties(appgwi PROPERTIES
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
+)
+
+target_include_directories(appgwi PRIVATE
+    include
 )
 
 target_link_libraries(appgwi
