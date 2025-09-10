@@ -1,4 +1,5 @@
 #include "ButtonHandler.hpp"
+#include "StateManager.hpp"
 #include "fkYAML.hpp"
 
 #include <QGuiApplication>
@@ -12,9 +13,11 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
-    ButtonHandler myButtonHandler;
+    ButtonHandler buttonHandler;
+    StateManager stateManager;
 
-    engine.rootContext()->setContextProperty("buttonHandler", &myButtonHandler);
+    engine.rootContext()->setContextProperty("buttonHandler", &buttonHandler);
+    engine.rootContext()->setContextProperty("stateManager", &stateManager);
 
     QObject::connect(
         &engine,

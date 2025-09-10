@@ -22,6 +22,8 @@ qt_add_qml_module(appgwi
         RESOURCES resources/example.yml
         SOURCES include/fkYAML.hpp
         RESOURCES resources/resources.qrc
+        SOURCES src/StateManager.cpp
+        SOURCES include/StateManager.hpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

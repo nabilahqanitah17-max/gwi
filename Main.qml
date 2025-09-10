@@ -36,7 +36,10 @@ Window {
                     text: "Setup"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -48,7 +51,10 @@ Window {
                     text: "Run"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -60,7 +66,10 @@ Window {
                     text: "Analysis"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -72,7 +81,10 @@ Window {
                     text: "Amplification Plot"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
             Rectangle {
@@ -83,7 +95,10 @@ Window {
                     text: "Standard Curve"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -95,7 +110,10 @@ Window {
                     text: "Raw Data"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -107,7 +125,10 @@ Window {
                     text: "Summary"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
 
@@ -119,7 +140,10 @@ Window {
                     text: "End"
                     font.pixelSize: 30
                     palette.button: "red"
-                    onClicked: buttonHandler.handleButtonClick(text)
+                    onClicked: {
+                        buttonHandler.handleButtonClick(text);
+                        stateManager.changeCurrentState(text);
+                    }
                 }
             }
         }
