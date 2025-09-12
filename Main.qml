@@ -46,7 +46,6 @@ Window {
         }
 
 
-
         if(currentButton === "Setup") {
             setupButton.palette.button = "Yellow"
         }
@@ -74,7 +73,7 @@ Window {
 
         latestButton = currentButton
 
-        if(currentButton == "Setup") {
+        if(currentButton === "Setup") {
             sliderVisibility = true
         }
         else {
@@ -115,7 +114,7 @@ Window {
                     width: 250
                     text: "Setup"
                     font.pixelSize: 30
-                    palette.button: "red"
+                    palette.button: "yellow"
                     onClicked: {
                         buttonHandler.handleButtonClick(text);
                         stateManager.changeCurrentState(text);
@@ -265,7 +264,7 @@ Window {
                     width: 300
                     value: 50
                     onValueChanged: {
-                        console.log("New slider value:", value)
+                        console.log("New slider value:", parseInt(value * 100))
                     }
                     implicitWidth: 100
                     implicitHeight: 50
