@@ -2,14 +2,22 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls.Basic
 
+ColumnLayout {
+    property int sliderValue:  0
     Slider {
         id: mySlider
-        width: 300
-        value: 50
         onValueChanged: {
-            console.log("New slider value:", parseInt(value * 100))
+            // the value variable is coming from Main.qml
+            sliderValue = parseInt(value * 100)
         }
-        implicitWidth: 100
+        implicitWidth: 300
         implicitHeight: 50
-        visible: sliderVisibility
+        leftPadding: 30
     }
+
+    Text {
+        text: "Light Intensity Level: " + sliderValue + " %"
+        font.pointSize: 24
+        leftPadding: 30
+    }
+}

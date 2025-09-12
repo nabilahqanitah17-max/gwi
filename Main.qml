@@ -77,7 +77,6 @@ Window {
     }
 
     RowLayout {
-        anchors.fill: parent
         ColumnLayout {
             Layout.alignment: Qt.AlignTop
             Rectangle {
@@ -237,13 +236,19 @@ Window {
             Layout.fillHeight: true
 
             Rectangle {
-                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignLeft
+                Layout.preferredWidth: 250
                 Layout.preferredHeight: 80
-                Layout.leftMargin: 10
-                Layout.bottomMargin: 10
+
                 Text {
                     text: "Experiment"
                     font.pixelSize: 30
+                    fontSizeMode: Text.Fit
+                    minimumPixelSize: 10
+                    leftPadding: 30
+                    topPadding: 20
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                 }
             }
 
