@@ -9,14 +9,9 @@ Window {
     height: 600
     visible: true
     title: qsTr("Hello World")
-    signal forwardd
-    function fun1(argument1){
-        console.log("A function fun1()in the main QML file is invoked by dynmic object")
-        console.log("Returned parameter from the QML dynamic objects = ", argument1)
-    }
 
     property string latestButton: "Setup"
-    property bool sliderVisibility: true
+    property string sourceFileName: "IntensitySlider.qml"
 
     function updateButton(currentButton) {
         console.log("latest button: " + latestButton + ", Current button: " + currentButton)
@@ -74,17 +69,11 @@ Window {
         latestButton = currentButton
 
         if(currentButton === "Setup") {
-            sliderVisibility = true
+            sourceFileName = "IntensitySlider.qml"
         }
         else {
-            sliderVisibility = false
+            sourceFileName = ""
         }
-    }
-
-    Loader {
-        id: hs
-        source: "IntensitySlider.qml"
-        // source: ""
     }
 
     RowLayout {
@@ -173,6 +162,7 @@ Window {
                     }
                 }
             }
+
             Rectangle {
                 Layout.alignment: Qt.AlignLeft
                 Layout.preferredHeight: 60
@@ -259,16 +249,8 @@ Window {
 
             Item {
                 Layout.fillHeight: true
-                Slider {
-                    id: mySlider
-                    width: 300
-                    value: 50
-                    onValueChanged: {
-                        console.log("New slider value:", parseInt(value * 100))
-                    }
-                    implicitWidth: 100
-                    implicitHeight: 50
-                    visible: sliderVisibility
+                Loader {
+                    source: sourceFileName
                 }
             }
 
