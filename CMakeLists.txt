@@ -4,7 +4,7 @@ project(gwi VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Charts)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -25,6 +25,9 @@ qt_add_qml_module(appgwi
         SOURCES src/StateManager.cpp
         SOURCES include/StateManager.hpp
         QML_FILES IntensitySlider.qml
+        QML_FILES AmplificationPlot.qml
+        SOURCES include/DataManager.hpp
+        SOURCES src/DataManager.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -42,9 +45,18 @@ target_include_directories(appgwi PRIVATE
     include
 )
 
-target_link_libraries(appgwi
-    PRIVATE Qt6::Quick
+target_link_libraries(appgwi PUBLIC
+    Qt6::Quick
+    Qt6::Charts
 )
+
+# target_link_libraries(qmlchartsgallery PUBLIC
+#     Qt::Charts
+#     Qt::Core
+#     Qt::Gui
+#     Qt::Qml
+#     Qt::Quick
+# )
 
 include(GNUInstallDirs)
 install(TARGETS appgwi

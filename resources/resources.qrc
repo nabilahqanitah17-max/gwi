@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file>resources/example.yml</file>
         <file>example.yml</file>
+        <file>../IntensitySlider.qml</file>
+        <file>../Main.qml</file>
+        <file>../AmplificationPlot.qml</file>
     </qresource>
 </RCC>

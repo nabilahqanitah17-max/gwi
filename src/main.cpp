@@ -1,8 +1,10 @@
 #include "ButtonHandler.hpp"
 #include "StateManager.hpp"
+#include "DataManager.hpp"
+
 #include "fkYAML.hpp"
 
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QFile>
@@ -11,13 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
     QQmlApplicationEngine engine;
-    ButtonHandler buttonHandler;
-    StateManager stateManager;
-
-    engine.rootContext()->setContextProperty("buttonHandler", &buttonHandler);
-    engine.rootContext()->setContextProperty("stateManager", &stateManager);
 
     QObject::connect(
         &engine,
@@ -33,14 +30,20 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // Read the whole file into a string
     QTextStream in(&file);
     std::string content = in.readAll().toStdString();
     file.close();
 
-    // Now, parse the string content with fkYAML
-    auto node = fkyaml::node::deserialize(content);
+    fkyaml::node node = fkyaml::node::deserialize(content);
     std::cout << node << std::endl;
+
+    ButtonHandler buttonHandler;
+    StateManager stateManager;
+    DataManager dataManager(node);
+
+    engine.rootContext()->setContextProperty("buttonHandler", &buttonHandler);
+    engine.rootContext()->setContextProperty("stateManager", &stateManager);
+    engine.rootContext()->setContextProperty("dataManager", &dataManager);
 
     return app.exec();
 }

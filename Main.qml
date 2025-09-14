@@ -71,12 +71,18 @@ Window {
         if(currentButton === "Setup") {
             sourceFileName = "IntensitySlider.qml"
         }
+        else if(currentButton === "Amplification Plot") {
+            sourceFileName = "AmplificationPlot.qml"
+        }
+
         else {
             sourceFileName = ""
         }
     }
 
     RowLayout {
+        spacing: 20
+
         ColumnLayout {
             Layout.alignment: Qt.AlignTop
             Rectangle {
@@ -253,7 +259,9 @@ Window {
             }
 
             Item {
+                id: itemParent
                 Layout.fillHeight: true
+                Layout.fillWidth: true
                 Loader {
                     source: sourceFileName
                 }
@@ -264,7 +272,6 @@ Window {
                 font.pixelSize: 30
                 Layout.preferredHeight: 50
                 Layout.preferredWidth: 150
-                Layout.leftMargin: 10
                 Layout.bottomMargin: 10
                 palette.button: "lightblue"
                 onClicked: buttonHandler.savePlotClick()
