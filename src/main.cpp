@@ -35,7 +35,6 @@ int main(int argc, char *argv[])
     file.close();
 
     fkyaml::node node = fkyaml::node::deserialize(content);
-    std::cout << node << std::endl;
 
     ButtonHandler buttonHandler;
     StateManager stateManager;

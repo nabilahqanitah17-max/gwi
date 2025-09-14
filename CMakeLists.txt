@@ -50,14 +50,6 @@ target_link_libraries(appgwi PUBLIC
     Qt6::Charts
 )
 
-# target_link_libraries(qmlchartsgallery PUBLIC
-#     Qt::Charts
-#     Qt::Core
-#     Qt::Gui
-#     Qt::Qml
-#     Qt::Quick
-# )
-
 include(GNUInstallDirs)
 install(TARGETS appgwi
     BUNDLE DESTINATION .
