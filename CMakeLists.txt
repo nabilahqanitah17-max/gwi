@@ -24,6 +24,8 @@ qt_add_qml_module(appuntitledahahah
         Run.qml
         END.qml
         AmplificationPlot.qml
+        RESOURCES qml.qrc
+        QML_FILES StandardCurve.qml
 )
 
 set_target_properties(appuntitledahahah PROPERTIES

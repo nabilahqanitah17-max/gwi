@@ -1,0 +1,212 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "updateButton",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 634,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 68
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 85,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 73
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 84
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 347,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 101
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 97
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 270,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 107
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 324,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 121
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 131
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 127
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 264,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 141
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 137
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 345,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 253,
+                        "errorMessage": "method updateButton cannot be resolved.",
+                        "functionName": "onClicked",
+                        "line": 161
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 157
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 182
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name globalFont",
+                        "functionName": "family",
+                        "line": 184
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 29,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name sourceFileName",
+                        "functionName": "source",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 200
+                    }
+                ],
+                "filePath": "C:/Users/user/Documents/untitledahahah/Main.qml"
+            }
+        ],
+        "moduleId": "untitledahahah(appuntitledahahah)"
+    }
+]

@@ -1,0 +1,8 @@
+module gwi
+typeinfo appgwi.qmltypes
+prefer :/qt/qml/gwi/
+Main 1.0 Main.qml
+IntensitySlider 1.0 IntensitySlider.qml
+AmplificationPlot 1.0 AmplificationPlot.qml
+depends QtQuick
+

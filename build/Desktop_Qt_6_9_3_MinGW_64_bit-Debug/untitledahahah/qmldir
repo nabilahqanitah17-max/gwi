@@ -1,0 +1,13 @@
+module untitledahahah
+typeinfo appuntitledahahah.qmltypes
+prefer :/qt/qml/untitledahahah/
+Main 1.0 Main.qml
+RawData 1.0 RawData.qml
+SetupPage 1.0 SetupPage.qml
+Summary 1.0 Summary.qml
+Run 1.0 Run.qml
+END 1.0 END.qml
+AmplificationPlot 1.0 AmplificationPlot.qml
+StandardCurve 1.0 StandardCurve.qml
+depends QtQuick
+

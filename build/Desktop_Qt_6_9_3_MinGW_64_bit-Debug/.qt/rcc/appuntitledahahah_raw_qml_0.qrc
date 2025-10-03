@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/qt/qml/untitledahahah/">
+    <file alias="Main.qml">C:/Users/user/Documents/untitledahahah/Main.qml</file>
+    <file alias="RawData.qml">C:/Users/user/Documents/untitledahahah/RawData.qml</file>
+    <file alias="SetupPage.qml">C:/Users/user/Documents/untitledahahah/SetupPage.qml</file>
+    <file alias="Summary.qml">C:/Users/user/Documents/untitledahahah/Summary.qml</file>
+    <file alias="Run.qml">C:/Users/user/Documents/untitledahahah/Run.qml</file>
+    <file alias="END.qml">C:/Users/user/Documents/untitledahahah/END.qml</file>
+    <file alias="AmplificationPlot.qml">C:/Users/user/Documents/untitledahahah/AmplificationPlot.qml</file>
+    <file alias="StandardCurve.qml">C:/Users/user/Documents/untitledahahah/StandardCurve.qml</file>
+    <file alias="qml.qrc">C:/Users/user/Documents/untitledahahah/qml.qrc</file>
+  </qresource>
+</RCC>
+

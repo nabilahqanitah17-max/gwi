@@ -1,0 +1,7 @@
+--resource
+C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/qmake_gwi.qrc
+--resource
+C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/appgwi_raw_qml_0.qrc
+/qt/qml/gwi/Main.qml
+/qt/qml/gwi/IntensitySlider.qml
+/qt/qml/gwi/AmplificationPlot.qml

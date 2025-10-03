@@ -1,0 +1,12 @@
+--resource
+C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/qmake_untitledahahah.qrc
+--resource
+C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/appuntitledahahah_raw_qml_0.qrc
+/qt/qml/untitledahahah/Main.qml
+/qt/qml/untitledahahah/RawData.qml
+/qt/qml/untitledahahah/SetupPage.qml
+/qt/qml/untitledahahah/Summary.qml
+/qt/qml/untitledahahah/Run.qml
+/qt/qml/untitledahahah/END.qml
+/qt/qml/untitledahahah/AmplificationPlot.qml
+/qt/qml/untitledahahah/StandardCurve.qml

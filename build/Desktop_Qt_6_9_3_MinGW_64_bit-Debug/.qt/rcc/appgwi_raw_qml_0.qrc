@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/qt/qml/gwi/">
+    <file alias="Main.qml">C:/Users/user/Documents/untitledahahah/Main.qml</file>
+    <file alias="IntensitySlider.qml">C:/Users/user/Documents/untitledahahah/IntensitySlider.qml</file>
+    <file alias="AmplificationPlot.qml">C:/Users/user/Documents/untitledahahah/AmplificationPlot.qml</file>
+    <file alias="resources/example.yml">C:/Users/user/Documents/untitledahahah/resources/example.yml</file>
+    <file alias="resources/resources.qrc">C:/Users/user/Documents/untitledahahah/resources/resources.qrc</file>
+  </qresource>
+</RCC>
+
