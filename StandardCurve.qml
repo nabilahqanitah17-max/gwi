@@ -8,7 +8,7 @@ Item {
 
     property string xScaleType: "log"
     property color lineColor: "blue"
-    property var standardData: DataManager.getStandardCurveData()  // <-- ambil dari DataManager
+    property var standardData: DataManager.getStandardCurveData()   // <-- ambil dari DataManager
 
     Column {
         anchors.fill: parent
@@ -159,6 +159,50 @@ Item {
 
             Component.onCompleted: requestPaint()
         }
+
+        // ✅ Tombol Save Plot
+        // ✅ Tombol Save Plot
+        Button {
+            id: saveButton
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 12
+            width: 220
+            height: 60
+            property bool saved: false
+
+            onClicked: {
+                saved = true
+                // nanti bisa ganti chartCanvas.save("standard_curve.png")
+                console.log("Standard curve plot saved!")
+            }
+
+            background: Rectangle {
+                radius: 15
+                color: saveButton.saved ? "#43A047" : "#1565C0"   // hijau kalau sudah disave, biru default
+                border.color: "#0D47A1"
+                border.width: 2
+            }
+
+            contentItem: Row {
+                spacing: 10
+                anchors.centerIn: parent
+
+                Text {
+                    text: "\u{1F4BE}"   // 💾 simbol save unicode
+                    font.pixelSize: 28
+                    color: "white"
+                }
+
+                Text {
+                    text: saveButton.saved ? "Plot Saved!" : "Save Plot"
+                    font.pixelSize: 24
+                    font.family: "Verdana"
+                    font.bold: true
+                    color: saveButton.saved ? "#E8F5E9" : "#E3F2FD"
+                }
+            }
+        }
+
     }
 }
-

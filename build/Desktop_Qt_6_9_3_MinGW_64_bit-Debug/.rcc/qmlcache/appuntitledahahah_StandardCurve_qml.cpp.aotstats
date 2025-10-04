@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 821,
+                        "durationMicroseconds": 745,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "standardData",
                         "line": 11
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 14
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 22
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 15527,
+                        "durationMicroseconds": 15269,
                         "errorMessage": "Cannot access value for name standardData",
                         "functionName": "onPaint",
                         "line": 61
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 55
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 28,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 56
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 57
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 29,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 58
@@ -110,10 +110,66 @@
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
                         "functionName": "onCompleted",
                         "line": 160
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"horizontalCenter\".",
+                        "functionName": "horizontalCenter",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 29,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"bottom\".",
+                        "functionName": "bottom",
+                        "line": 168
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "Cannot access value for name saveButton",
+                        "functionName": "color",
+                        "line": 182
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 7,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "centerIn",
+                        "line": 189
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name saveButton",
+                        "functionName": "text",
+                        "line": 198
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name saveButton",
+                        "functionName": "color",
+                        "line": 202
                     }
                 ],
                 "filePath": "C:/Users/user/Documents/untitledahahah/StandardCurve.qml"

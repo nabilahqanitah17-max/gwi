@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
 import "DataManager.js" as DataManager
 
 Item {
@@ -8,7 +9,8 @@ Item {
 
     property string scaleType: "linear"
     property color lineColor: "red"
-    property var dataPoints: DataManager.getAmplificationData()   // ✅ ambil dari DataManager.js
+    property var dataPoints: DataManager.getAmplificationData()
+    property bool isSaved: false   // ✅ status tombol
 
     Column {
         anchors.fill: parent
@@ -46,11 +48,12 @@ Item {
             }
         }
 
+        // ✅ Perbesar grafik: dari -150 jadi -100 supaya lebih tinggi
         Canvas {
             id: chartCanvas
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            height: parent.height - 80
+            height: parent.height - 100
             anchors.margins: 20
 
             onPaint: {
@@ -87,20 +90,32 @@ Item {
 
                 // Tick Y
                 ctx.textAlign = "right";
-                ctx.font = "32px Sans";
-                var yMax = Math.max.apply(Math, dataPoints.map(function(o){ return o.y; }));  // ✅ otomatis
-                for(var y=0; y<=yMax; y+=200){
-                    var py;
-                    if(scaleType === "log") {
-                        py = bottom - Math.log10(y + 1)/Math.log10(yMax + 1)*(bottom-top);
-                    } else {
-                        py = bottom - (y/yMax)*(bottom-top);
+                ctx.font = "28px Sans";
+                var yMax = Math.max.apply(Math, dataPoints.map(function(o){ return o.y; }));
+                var tickCount = 8;
+
+                if (scaleType === "log") {
+                    var logMax = Math.log10(yMax + 1);
+                    for (var j = 0; j <= tickCount; j++) {
+                        var py = bottom - (j/tickCount) * (bottom - top);
+                        var yVal = Math.pow(10, (j/tickCount) * logMax) - 1;
+                        ctx.beginPath();
+                        ctx.moveTo(left, py);
+                        ctx.lineTo(left - 12, py);
+                        ctx.stroke();
+                        ctx.fillText(yVal.toFixed(1).toString(), left - 20, py + 8);
                     }
-                    ctx.beginPath();
-                    ctx.moveTo(left, py);
-                    ctx.lineTo(left-12, py);
-                    ctx.stroke();
-                    ctx.fillText(y.toString(), left-20, py+10);
+                } else {
+                    var step = yMax / tickCount;
+                    for (var j = 0; j <= tickCount; j++) {
+                        var yVal = step * j;
+                        var py = bottom - (yVal / yMax) * (bottom - top);
+                        ctx.beginPath();
+                        ctx.moveTo(left, py);
+                        ctx.lineTo(left - 12, py);
+                        ctx.stroke();
+                        ctx.fillText(yVal.toFixed(1).toString(), left - 20, py + 8);
+                    }
                 }
 
                 // Axis titles
@@ -121,7 +136,8 @@ Item {
                     var px = left + (dataPoints[i].x/40)*(right-left);
                     var py;
                     if(scaleType === "log") {
-                        py = bottom - Math.log10(dataPoints[i].y+1)/Math.log10(yMax+1)*(bottom-top);
+                        var logMax2 = Math.log10(yMax+1);
+                        py = bottom - Math.log10(dataPoints[i].y+1)/logMax2*(bottom-top);
                     } else {
                         py = bottom - (dataPoints[i].y/yMax)*(bottom-top);
                     }
@@ -132,6 +148,47 @@ Item {
 
             Component.onCompleted: requestPaint()
         }
+
+        // ✅ Tombol Save Plot lebih interaktif
+        Button {
+            id: saveButton
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 220
+            height: 55
+
+            contentItem: Row {
+                spacing: 10
+                anchors.centerIn: parent
+
+                Text {
+                    text: "\u{1F4BE}"   // 💾 ikon save unicode
+                    font.pixelSize: 26
+                    color: "white"
+                }
+
+                Text {
+                    text: isSaved ? "Saved!" : "Save Plot"
+                    font.pixelSize: 24
+                    font.family: "Verdana"
+                    font.bold: true
+                    color: isSaved ? "#E8F5E9" : "#E3F2FD"
+                }
+            }
+
+            background: Rectangle {
+                radius: 15
+                color: isSaved ? "#43A047" : "#1565C0"   // hijau saat saved, biru default
+                border.color: "#0D47A1"
+                border.width: 2
+            }
+
+            onClicked: {
+                isSaved = true
+                chartCanvas.save("plot.png")  // simpan PNG
+            }
+        }
     }
 }
+
+
 
