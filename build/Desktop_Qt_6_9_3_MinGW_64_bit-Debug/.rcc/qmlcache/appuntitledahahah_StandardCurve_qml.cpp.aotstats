@@ -6,34 +6,34 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 862,
-                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "durationMicroseconds": 821,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "standardData",
-                        "line": 10
+                        "line": 11
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 189,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 19
+                        "line": 14
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 1276,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 27
+                        "line": 21
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
-                        "line": 28
+                        "line": 22
                     },
                     {
                         "codegenSuccessful": false,
@@ -41,7 +41,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"model\".",
                         "functionName": "model",
-                        "line": 33
+                        "line": 27
                     },
                     {
                         "codegenSuccessful": false,
@@ -49,7 +49,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"currentTextChanged\".",
                         "functionName": "onCurrentTextChanged",
-                        "line": 35
+                        "line": 29
                     },
                     {
                         "codegenSuccessful": false,
@@ -57,7 +57,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find property \"model\".",
                         "functionName": "model",
-                        "line": 44
+                        "line": 38
                     },
                     {
                         "codegenSuccessful": false,
@@ -65,55 +65,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Could not find signal \"currentTextChanged\".",
                         "functionName": "onCurrentTextChanged",
-                        "line": 46
+                        "line": 40
                     },
                     {
                         "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 16446,
+                        "durationMicroseconds": 15527,
                         "errorMessage": "Cannot access value for name standardData",
                         "functionName": "onPaint",
-                        "line": 67
-                    },
-                    {
-                        "codegenSuccessful": true,
-                        "column": 27,
-                        "durationMicroseconds": 118,
-                        "errorMessage": "",
-                        "functionName": "left",
                         "line": 61
                     },
                     {
                         "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": true,
                         "column": 28,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 62
+                        "line": 56
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 63
+                        "line": 57
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 29,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "bottom",
-                        "line": 64
+                        "line": 58
                     },
                     {
                         "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "onCompleted",
-                        "line": 172
+                        "line": 160
                     }
                 ],
                 "filePath": "C:/Users/user/Documents/untitledahahah/StandardCurve.qml"

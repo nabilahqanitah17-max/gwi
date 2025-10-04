@@ -61,6 +61,13 @@ namespace _qt_qml_untitledahahah_StandardCurve_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_untitledahahah_DataManager_js { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -83,6 +90,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/untitledahahah/END.qml"), &QmlCacheGeneratedCode::_qt_qml_untitledahahah_END_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/untitledahahah/AmplificationPlot.qml"), &QmlCacheGeneratedCode::_qt_qml_untitledahahah_AmplificationPlot_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/untitledahahah/StandardCurve.qml"), &QmlCacheGeneratedCode::_qt_qml_untitledahahah_StandardCurve_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/untitledahahah/DataManager.js"), &QmlCacheGeneratedCode::_qt_qml_untitledahahah_DataManager_js::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

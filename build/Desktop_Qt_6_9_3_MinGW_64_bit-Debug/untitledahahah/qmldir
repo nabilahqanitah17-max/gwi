@@ -9,5 +9,6 @@ Run 1.0 Run.qml
 END 1.0 END.qml
 AmplificationPlot 1.0 AmplificationPlot.qml
 StandardCurve 1.0 StandardCurve.qml
+DataManager 1.0 DataManager.js
 depends QtQuick
 

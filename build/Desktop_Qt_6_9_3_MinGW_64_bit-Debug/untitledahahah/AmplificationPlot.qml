@@ -1,6 +1,6 @@
-// AmplificationPlot.qml
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "DataManager.js" as DataManager
 
 Item {
     width: parent.width
@@ -8,20 +8,13 @@ Item {
 
     property string scaleType: "linear"
     property color lineColor: "red"
-    property var dataPoints: [
-        {x:0, y:0.05},
-        {x:10, y:0.12},
-        {x:20, y:0.35},
-        {x:30, y:0.95},
-        {x:40, y:1.0}
-    ]
+    property var dataPoints: DataManager.getAmplificationData()   // ✅ ambil dari DataManager.js
 
     Column {
         anchors.fill: parent
         spacing: 10
         padding: 10
 
-        // Row untuk ComboBox
         Row {
             spacing: 20
             anchors.horizontalCenter: parent.horizontalCenter
@@ -53,12 +46,11 @@ Item {
             }
         }
 
-        // Canvas: beri tinggi tetap agar ComboBox tidak tertutup
         Canvas {
             id: chartCanvas
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            height: parent.height - 80   // cukup ruang untuk ComboBox di atas
+            height: parent.height - 80
             anchors.margins: 20
 
             onPaint: {
@@ -96,11 +88,11 @@ Item {
                 // Tick Y
                 ctx.textAlign = "right";
                 ctx.font = "32px Sans";
-                var yMax = 1.2;
-                for(var y=0; y<=yMax; y+=0.2){
+                var yMax = Math.max.apply(Math, dataPoints.map(function(o){ return o.y; }));  // ✅ otomatis
+                for(var y=0; y<=yMax; y+=200){
                     var py;
                     if(scaleType === "log") {
-                        py = bottom - Math.log10(y + 0.01)/Math.log10(yMax + 0.01)*(bottom-top);
+                        py = bottom - Math.log10(y + 1)/Math.log10(yMax + 1)*(bottom-top);
                     } else {
                         py = bottom - (y/yMax)*(bottom-top);
                     }
@@ -108,7 +100,7 @@ Item {
                     ctx.moveTo(left, py);
                     ctx.lineTo(left-12, py);
                     ctx.stroke();
-                    ctx.fillText(y.toFixed(2), left-20, py+10);
+                    ctx.fillText(y.toString(), left-20, py+10);
                 }
 
                 // Axis titles
@@ -129,7 +121,7 @@ Item {
                     var px = left + (dataPoints[i].x/40)*(right-left);
                     var py;
                     if(scaleType === "log") {
-                        py = bottom - Math.log10(dataPoints[i].y+0.01)/Math.log10(yMax + 0.01)*(bottom-top);
+                        py = bottom - Math.log10(dataPoints[i].y+1)/Math.log10(yMax+1)*(bottom-top);
                     } else {
                         py = bottom - (dataPoints[i].y/yMax)*(bottom-top);
                     }
@@ -142,3 +134,4 @@ Item {
         }
     }
 }
+

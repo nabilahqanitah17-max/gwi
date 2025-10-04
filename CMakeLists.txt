@@ -26,6 +26,8 @@ qt_add_qml_module(appuntitledahahah
         AmplificationPlot.qml
         RESOURCES qml.qrc
         QML_FILES StandardCurve.qml
+        RESOURCES datamanager.py
+        QML_FILES DataManager.js
 )
 
 set_target_properties(appuntitledahahah PROPERTIES

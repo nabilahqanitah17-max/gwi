@@ -1,9 +1,12 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "DataManager.js" as DataManager   // <-- import DataManager
 
 Page {
     id: summaryPage
     anchors.fill: parent
+
+    property var summaryData: DataManager.getSummary()   // <-- ambil dari DataManager
 
     Rectangle {
         anchors.fill: parent
@@ -44,50 +47,50 @@ Page {
                     Row {
                         spacing: 40
                         Text { text: "Status"; width: 200; font.pixelSize: 18 }
-                        Text { text: "✅ Finished"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.status; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Total Cycles"; width: 200; font.pixelSize: 18 }
-                        Text { text: "30"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.totalCycles; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Total Time"; width: 200; font.pixelSize: 18 }
-                        Text { text: "120 s"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.totalTime; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Ct Value"; width: 200; font.pixelSize: 18 }
-                        Text { text: "18"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.ctValue; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Max Fluorescence"; width: 200; font.pixelSize: 18 }
-                        Text { text: "1520 RFU"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.maxFluorescence; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Min Fluorescence"; width: 200; font.pixelSize: 18 }
-                        Text { text: "100 RFU"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.minFluorescence; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Mean Fluorescence"; width: 200; font.pixelSize: 18 }
-                        Text { text: "720 RFU"; width: 300; font.pixelSize: 18 }
+                        Text { text: summaryData.meanFluorescence; width: 300; font.pixelSize: 18 }
                     }
 
                     Row {
                         spacing: 40
                         Text { text: "Conclusion"; width: 200; font.pixelSize: 18 }
                         Text {
-                            text: "Positive Amplification"
+                            text: summaryData.conclusion
                             width: 300
                             color: "#27ae60"
                             font.bold: true

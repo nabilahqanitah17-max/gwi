@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 312,
+                        "durationMicroseconds": 367,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 7
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 12
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 34,
-                        "durationMicroseconds": 639,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 22
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 23
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 1098,
                         "errorMessage": "Cannot retrieve a non-object type by ID: intensitySlider",
                         "functionName": "text",
                         "line": 47
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 183,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 61

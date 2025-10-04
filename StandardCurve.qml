@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "DataManager.js" as DataManager   // <-- import DataManager
 
 Item {
     width: 750
@@ -7,20 +8,13 @@ Item {
 
     property string xScaleType: "log"
     property color lineColor: "blue"
-    property var standardData: [
-        {sq: 1, ct: 35},
-        {sq: 10, ct: 28},
-        {sq: 100, ct: 21},
-        {sq: 1000, ct: 14},
-        {sq: 10000, ct: 7}
-    ]
+    property var standardData: DataManager.getStandardCurveData()  // <-- ambil dari DataManager
 
     Column {
         anchors.fill: parent
         spacing: 15
         anchors.margins: 15
 
-        // Bungkus kedua ComboBox di satu Row
         Row {
             id: comboRow
             spacing: 20
@@ -60,7 +54,7 @@ Item {
             id: chartCanvas
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.top: comboRow.bottom  // Canvas di bawah seluruh Row ComboBox
+            anchors.top: comboRow.bottom
             anchors.bottom: parent.bottom
             anchors.margins: 10
 
@@ -73,7 +67,6 @@ Item {
                 ctx.fillStyle = "#ffffff";
                 ctx.fillRect(0, 0, width, height);
 
-                // axes
                 ctx.strokeStyle = "#000";
                 ctx.lineWidth = 2;
                 ctx.beginPath();
@@ -87,7 +80,6 @@ Item {
                 var minCt = Math.min.apply(null, standardData.map(d => d.ct));
                 var maxCt = Math.max.apply(null, standardData.map(d => d.ct));
 
-                // X ticks
                 ctx.font = "16px Sans";
                 ctx.textAlign = "center";
                 ctx.fillStyle = "#000";
@@ -117,7 +109,6 @@ Item {
                     ctx.fillText(label, px, bottom+25);
                 }
 
-                // Y ticks
                 ctx.textAlign = "right";
                 var yStep = Math.ceil((maxCt-minCt)/5);
                 for(var y=minCt; y<=maxCt; y+=yStep){
@@ -129,7 +120,6 @@ Item {
                     ctx.fillText(y.toFixed(0), left-12, py+5);
                 }
 
-                // Axis titles
                 ctx.textAlign = "center";
                 ctx.font = "18px Sans";
                 ctx.fillText("Starting Quantity", (left+right)/2, height-25);
@@ -139,7 +129,6 @@ Item {
                 ctx.fillText("Ct (Cycle Threshold)", 0, 0);
                 ctx.restore();
 
-                // draw line connecting points
                 ctx.strokeStyle = lineColor;
                 ctx.lineWidth = 2;
                 ctx.beginPath();
@@ -154,7 +143,6 @@ Item {
                 }
                 ctx.stroke();
 
-                // draw points
                 ctx.fillStyle = lineColor;
                 for(var i=0;i<standardData.length;i++){
                     var sq = standardData[i].sq;
@@ -173,6 +161,4 @@ Item {
         }
     }
 }
-
-
 

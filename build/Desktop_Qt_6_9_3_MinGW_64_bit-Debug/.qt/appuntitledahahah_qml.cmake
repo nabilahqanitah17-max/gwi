@@ -18,6 +18,8 @@ set(src_and_dest_list
     "C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/untitledahahah/AmplificationPlot.qml"
     "C:/Users/user/Documents/untitledahahah/StandardCurve.qml"
     "C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/untitledahahah/StandardCurve.qml"
+    "C:/Users/user/Documents/untitledahahah/DataManager.js"
+    "C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/untitledahahah/DataManager.js"
 
 )
 set(timestamp_file "C:/Users/user/Documents/untitledahahah/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/appuntitledahahah_qml.txt")

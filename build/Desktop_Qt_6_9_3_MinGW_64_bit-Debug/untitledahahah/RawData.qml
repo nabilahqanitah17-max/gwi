@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "DataManager.js" as DataManager   // ✅ Import DataManager.js
 
 Page {
     id: rawDataPage
@@ -81,13 +82,14 @@ Page {
                         }
 
                         model: ListModel {
-                            // Dummy 30 cycle
+                            // ✅ Ambil data dari DataManager.js
                             Component.onCompleted: {
-                                for (var i = 1; i <= 30; i++) {
+                                var data = DataManager.getRawData();
+                                for (var i = 0; i < data.length; i++) {
                                     append({
-                                        "cycle": i,
-                                        "fluorescence": 100 + i * 50,
-                                        "temp": (i % 3 === 1 ? "95" : (i % 3 === 2 ? "60" : "72"))
+                                        "cycle": data[i].cycle,
+                                        "fluorescence": data[i].fluorescence,
+                                        "temp": data[i].temperature
                                     })
                                 }
                             }
@@ -118,3 +120,4 @@ Page {
         }
     }
 }
+
