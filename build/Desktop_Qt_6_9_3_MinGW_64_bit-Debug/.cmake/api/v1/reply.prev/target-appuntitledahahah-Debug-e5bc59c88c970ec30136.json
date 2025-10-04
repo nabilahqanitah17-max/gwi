@@ -82,7 +82,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 12,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -106,19 +106,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 44,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 38,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 8,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -204,7 +204,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 16,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -482,7 +482,7 @@
 			{
 				"command" : 14,
 				"file" : 10,
-				"line" : 3613,
+				"line" : 3607,
 				"parent" : 73
 			},
 			{
@@ -494,7 +494,7 @@
 			{
 				"command" : 14,
 				"file" : 10,
-				"line" : 3607,
+				"line" : 3613,
 				"parent" : 73
 			},
 			{
@@ -1204,22 +1204,22 @@
 	[
 		{
 			"backtrace" : 75,
-			"id" : "appuntitledahahah_copy_res::@6890427a1f51a3e7e1df"
+			"id" : "appuntitledahahah_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 77,
-			"id" : "appuntitledahahah_copy_qml::@6890427a1f51a3e7e1df"
+			"id" : "appuntitledahahah_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 84,
 			"id" : "appuntitledahahah_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "appuntitledahahah_autogen::@6890427a1f51a3e7e1df"
+			"id" : "appuntitledahahah_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "appuntitledahahah_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "appuntitledahahah_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appuntitledahahah::@6890427a1f51a3e7e1df",

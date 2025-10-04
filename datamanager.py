@@ -5,12 +5,12 @@ import time
 def generate_data(n=10, filename="data_dummy.csv"):
     with open(filename, mode="w", newline="") as file:
         writer = csv.writer(file)
-        writer.writerow(["time", "intensitas"])  # header
+        writer.writerow(["time", "intensitas"])
+
         for t in range(n):
             intensitas = random.randint(0, 100)
             print(f"Generated: time={t}, intensitas={intensitas}")
             writer.writerow([t, intensitas])
-            time.sleep(0.5)  # simulasi delay sensor
-
+            time.sleep(0.2)
 if __name__ == "__main__":
-    generate_data(20)  # generate 20 data
+    generate_data(20)

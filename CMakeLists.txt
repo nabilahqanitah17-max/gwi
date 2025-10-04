@@ -4,7 +4,6 @@ project(untitledahahah VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Tambahkan Charts di sini
 find_package(Qt6 REQUIRED COMPONENTS Quick Charts)
 
 qt_standard_project_setup(REQUIRES 6.8)
@@ -28,6 +27,7 @@ qt_add_qml_module(appuntitledahahah
         QML_FILES StandardCurve.qml
         RESOURCES datamanager.py
         QML_FILES DataManager.js
+        RESOURCES datamanager.py
 )
 
 set_target_properties(appuntitledahahah PROPERTIES

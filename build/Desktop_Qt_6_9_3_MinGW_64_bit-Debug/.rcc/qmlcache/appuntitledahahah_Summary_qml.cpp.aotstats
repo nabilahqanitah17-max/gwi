@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 31,
-                        "durationMicroseconds": 817,
+                        "durationMicroseconds": 1115,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "summaryData",
                         "line": 9
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 69,
+                        "durationMicroseconds": 101,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 12
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 45,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 16
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 38,
-                        "durationMicroseconds": 2354,
+                        "durationMicroseconds": 170,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 24
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 367,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 35
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 69,
-                        "durationMicroseconds": 196,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 45
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 71,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 50
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 46,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 56
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 38,
+                        "durationMicroseconds": 44,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 62
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 68
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 52,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 74
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 33,
+                        "durationMicroseconds": 57,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 80
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 38,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 40,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 86
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Cannot access value for name summaryData",
                         "functionName": "text",
                         "line": 93

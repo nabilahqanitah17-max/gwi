@@ -1,12 +1,12 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "DataManager.js" as DataManager   // <-- import DataManager
+import "DataManager.js" as DataManager
 
 Page {
     id: summaryPage
     anchors.fill: parent
 
-    property var summaryData: DataManager.getSummary()   // <-- ambil dari DataManager
+    property var summaryData: DataManager.getSummary()
 
     Rectangle {
         anchors.fill: parent
@@ -32,7 +32,7 @@ Page {
                 radius: 10
 
                 Column {
-                    anchors.fill: parent
+                    anchors.fill: parent //h
                     anchors.margins: 20
                     spacing: 14
 

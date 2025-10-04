@@ -82,7 +82,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 12,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -106,19 +106,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 43,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 37,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 8,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -204,7 +204,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 16,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -719,6 +719,18 @@
 				"parent" : 73
 			},
 			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3321,
+				"parent" : 73
+			},
+			{
+				"command" : 23,
+				"file" : 10,
+				"line" : 3514,
+				"parent" : 73
+			},
+			{
 				"command" : 28,
 				"file" : 10,
 				"line" : 3629,
@@ -728,19 +740,19 @@
 				"command" : 27,
 				"file" : 0,
 				"line" : 405,
-				"parent" : 114
+				"parent" : 116
 			},
 			{
 				"command" : 26,
 				"file" : 0,
 				"line" : 2594,
-				"parent" : 115
+				"parent" : 117
 			},
 			{
 				"command" : 23,
 				"file" : 0,
 				"line" : 2137,
-				"parent" : 116
+				"parent" : 118
 			},
 			{
 				"command" : 30,
@@ -752,7 +764,7 @@
 				"command" : 23,
 				"file" : 0,
 				"line" : 2262,
-				"parent" : 118
+				"parent" : 120
 			}
 		]
 	},
@@ -973,7 +985,8 @@
 				17,
 				19,
 				21,
-				22
+				23,
+				24
 			]
 		},
 		{
@@ -1198,11 +1211,11 @@
 			"id" : "appuntitledahahah_copy_qml::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "appuntitledahahah_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 84,
 			"id" : "appuntitledahahah_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "appuntitledahahah_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -1384,14 +1397,12 @@
 				17,
 				19,
 				21,
-				22,
 				23,
 				24,
 				25,
-				28,
-				44,
-				45,
-				46,
+				26,
+				27,
+				30,
 				47,
 				48,
 				49,
@@ -1400,7 +1411,10 @@
 				52,
 				53,
 				54,
-				55
+				55,
+				56,
+				57,
+				58
 			]
 		},
 		{
@@ -1415,29 +1429,28 @@
 				14,
 				16,
 				18,
-				20
+				20,
+				22
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				26
+				28
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				27
+				29
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				29,
-				30,
 				31,
 				32,
 				33,
@@ -1450,7 +1463,10 @@
 				40,
 				41,
 				42,
-				43
+				43,
+				44,
+				45,
+				46
 			]
 		}
 	],
@@ -1593,37 +1609,49 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 117,
+			"backtrace" : 114,
+			"path" : "DataManager.js",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 115,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitledahahah_DataManager_js.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 119,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/qrc_appuntitledahahah_raw_qml_0.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 119,
+			"backtrace" : 121,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/qmake_untitledahahah.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 119,
+			"backtrace" : 121,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/untitledahahah/qmldir",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 119,
+			"backtrace" : 121,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.qt/rcc/appuntitledahahah_raw_qml_0.qrc",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 119,
+			"backtrace" : 121,
 			"path" : "qml.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 119,
+			"backtrace" : 121,
 			"path" : "datamanager.py",
 			"sourceGroupIndex" : 3
 		},
@@ -1703,6 +1731,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitledahahah_StandardCurve_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/.rcc/qmlcache/appuntitledahahah_DataManager_js.cpp.rule",
 			"sourceGroupIndex" : 4
 		},
 		{

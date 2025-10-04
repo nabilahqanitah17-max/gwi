@@ -10,7 +10,7 @@ Item {
     property string scaleType: "linear"
     property color lineColor: "red"
     property var dataPoints: DataManager.getAmplificationData()
-    property bool isSaved: false   // ✅ status tombol
+    property bool isSaved: false
 
     Column {
         anchors.fill: parent
@@ -48,7 +48,6 @@ Item {
             }
         }
 
-        // ✅ Perbesar grafik: dari -150 jadi -100 supaya lebih tinggi
         Canvas {
             id: chartCanvas
             anchors.horizontalCenter: parent.horizontalCenter
@@ -118,7 +117,6 @@ Item {
                     }
                 }
 
-                // Axis titles
                 ctx.font = "50px Sans";
                 ctx.textAlign = "center";
                 ctx.fillText("Cycle Number", (left+right)/2, height-10);
@@ -128,7 +126,6 @@ Item {
                 ctx.fillText("Fluorescence Intensity", 0, 0);
                 ctx.restore();
 
-                // Line plot
                 ctx.strokeStyle = lineColor;
                 ctx.lineWidth = 4;
                 ctx.beginPath();
@@ -149,7 +146,6 @@ Item {
             Component.onCompleted: requestPaint()
         }
 
-        // ✅ Tombol Save Plot lebih interaktif
         Button {
             id: saveButton
             anchors.horizontalCenter: parent.horizontalCenter
@@ -161,7 +157,7 @@ Item {
                 anchors.centerIn: parent
 
                 Text {
-                    text: "\u{1F4BE}"   // 💾 ikon save unicode
+                    text: "\u{1F4BE}"
                     font.pixelSize: 26
                     color: "white"
                 }
@@ -177,14 +173,14 @@ Item {
 
             background: Rectangle {
                 radius: 15
-                color: isSaved ? "#43A047" : "#1565C0"   // hijau saat saved, biru default
+                color: isSaved ? "#43A047" : "#1565C0"
                 border.color: "#0D47A1"
                 border.width: 2
             }
 
             onClicked: {
                 isSaved = true
-                chartCanvas.save("plot.png")  // simpan PNG
+                chartCanvas.save("plot.png")
             }
         }
     }

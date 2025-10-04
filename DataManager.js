@@ -1,6 +1,5 @@
 // DataManager.js
 
-// --- Data untuk Amplification Plot (Cycle vs Fluorescence RFU) ---
 function getAmplificationData() {
     return [
         {x:0,  y:0.05},
@@ -53,7 +52,7 @@ function getStandardCurveData() {
         {sq: 10, ct: 30},
         {sq: 100, ct: 25},
         {sq: 1000, ct: 21},
-        {sq: 10000, ct: 18} // contoh cocok dengan Ct dari summary
+        {sq: 10000, ct: 18}
     ];
 }
 

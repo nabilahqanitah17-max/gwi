@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "DataManager.js" as DataManager   // <-- import DataManager
+import "DataManager.js" as DataManager
 
 Item {
     width: 750
@@ -8,7 +8,7 @@ Item {
 
     property string xScaleType: "log"
     property color lineColor: "blue"
-    property var standardData: DataManager.getStandardCurveData()   // <-- ambil dari DataManager
+    property var standardData: DataManager.getStandardCurveData()
 
     Column {
         anchors.fill: parent
@@ -160,8 +160,6 @@ Item {
             Component.onCompleted: requestPaint()
         }
 
-        // ✅ Tombol Save Plot
-        // ✅ Tombol Save Plot
         Button {
             id: saveButton
             anchors.horizontalCenter: parent.horizontalCenter
@@ -173,13 +171,12 @@ Item {
 
             onClicked: {
                 saved = true
-                // nanti bisa ganti chartCanvas.save("standard_curve.png")
                 console.log("Standard curve plot saved!")
             }
 
             background: Rectangle {
                 radius: 15
-                color: saveButton.saved ? "#43A047" : "#1565C0"   // hijau kalau sudah disave, biru default
+                color: saveButton.saved ? "#43A047" : "#1565C0"
                 border.color: "#0D47A1"
                 border.width: 2
             }
@@ -189,7 +186,7 @@ Item {
                 anchors.centerIn: parent
 
                 Text {
-                    text: "\u{1F4BE}"   // 💾 simbol save unicode
+                    text: "\u{1F4BE}"
                     font.pixelSize: 28
                     color: "white"
                 }

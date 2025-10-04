@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import "DataManager.js" as DataManager   // ✅ Import DataManager.js
+import "DataManager.js" as DataManager
 
 Page {
     id: rawDataPage
@@ -82,7 +82,6 @@ Page {
                         }
 
                         model: ListModel {
-                            // ✅ Ambil data dari DataManager.js
                             Component.onCompleted: {
                                 var data = DataManager.getRawData();
                                 for (var i = 0; i < data.length; i++) {
