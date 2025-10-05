@@ -27,8 +27,22 @@ ColumnLayout {
             anchors.fill: parent
             antialiasing: true
 
+            ValueAxis {
+                id: xAxis
+                titleText: "Cycle Number"
+
+            }
+
+            ValueAxis {
+                id: yAxis
+                titleText: "Fluorescence Intensity"
+
+            }
+
             LineSeries {
-                name: "Line"
+                name: "Amplification Plot"
+                axisX: xAxis
+                axisY: yAxis
 
                 XYPoint { x: 0; y: ampData.length > 0 ? ampData[0].y : 0 }
                 XYPoint { x: 1; y: ampData.length > 1 ? ampData[1].y : 0 }
@@ -61,6 +75,15 @@ ColumnLayout {
                 XYPoint { x: 28; y: ampData.length > 28 ? ampData[28].y : 0 }
                 XYPoint { x: 29; y: ampData.length > 29 ? ampData[29].y : 0 }
                 XYPoint { x: 30; y: ampData.length > 30 ? ampData[30].y : 0 }
+                XYPoint { x: 31; y: ampData.length > 31 ? ampData[31].y : 0 }
+                XYPoint { x: 32; y: ampData.length > 32 ? ampData[32].y : 0 }
+                XYPoint { x: 33; y: ampData.length > 33 ? ampData[33].y : 0 }
+                XYPoint { x: 34; y: ampData.length > 34 ? ampData[34].y : 0 }
+                XYPoint { x: 35; y: ampData.length > 35 ? ampData[35].y : 0 }
+                XYPoint { x: 36; y: ampData.length > 36 ? ampData[36].y : 0 }
+                XYPoint { x: 37; y: ampData.length > 37 ? ampData[37].y : 0 }
+                XYPoint { x: 38; y: ampData.length > 38 ? ampData[38].y : 0 }
+                XYPoint { x: 39; y: ampData.length > 39 ? ampData[39].y : 0 }
             }
         }
     }

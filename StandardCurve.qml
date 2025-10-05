@@ -46,7 +46,7 @@ ColumnLayout {
                 name: "Standard Curve"
                 axisX: xAxis
                 axisY: yAxis
-                pointsVisible: true   // <- ini biar titik-titik nampak
+                pointsVisible: true
 
                 // Titik-titik data, log10(sq) untuk x
                 XYPoint { x: stdData.length > 0 ? Math.log10(stdData[0].sq) : 0; y: stdData.length > 0 ? stdData[0].ct : 0 }
